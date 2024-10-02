@@ -1,0 +1,224 @@
+/*.baloo-2- {
+    font-family: "Baloo 2", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .poppins-regular {
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+* ::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #280338, #040005, #280338);
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+main header {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px, 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  padding: 7px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main header div.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+main header div.title h1 {
+  font-family: "Baloo 2", cursive;
+  font-size: 32px;
+  margin-left: 10px;
+}
+main header button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: none;
+}
+main div.container {
+  background-color: #7E878c;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0px, 0px, 16px, 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+main div.container div.users-window {
+  width: 350px;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+main div.container div.users-window div.users-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+main div.container div.users-window div.users-head h4 {
+  background-color: #7E878c;
+  padding: 0 8px;
+  border-radius: 50px;
+}
+main div.container div.users-window div.users-list p {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+main div.container div.chat-window {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #000000;
+}
+main div.container div.chats {
+  height: 65vh;
+  padding: 20px;
+  overflow-y: auto;
+}
+main div.container div.chats div.user-join {
+  font-size: 0.9rem;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 50px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 7px 20px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+main div.container div.chats div.message {
+  color: #ffffff;
+  background-color: #ffffff;
+  padding: 5px 15px;
+  max-width: 400px;
+  margin-bottom: 15px;
+  border-radius: 10px 50px 50px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+main div.container div.chats div.message p {
+  font-size: 16px;
+}
+main div.container div.chats div.outgoing {
+  margin-left: auto;
+  color: #ffffff;
+  background-color: #2791cf;
+  border-radius: 50px 10px 10px 50px;
+  text-align: right;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+main div.container div.user-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 20px;
+}
+main div.container div.user-input input {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  color: #ffffff;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 50px 0 0 50px;
+}
+main div.container div.user-input button {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  border-radius: 0 50px 50px 0;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    width: 95%;
+  }
+  main header button {
+    display: block;
+  }
+  main div.container {
+    position: relative;
+  }
+  main div.container div.users-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    height: -moz-max-content;
+    height: max-content;
+    z-index: 11;
+    box-shadow: 0 15px 20px -20px black;
+    padding-bottom: 0;
+    display: none;
+  }
+  main div.container div.chat-window div.chats div.message {
+    max-width: 300px;
+  }
+}/*# sourceMappingURL=index.css.map */
